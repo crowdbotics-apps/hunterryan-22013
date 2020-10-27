@@ -7,24 +7,36 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('hydrostat', '0001_initial'),
-        ('home', '0003_status'),
+        ("hydrostat", "0001_initial"),
+        ("home", "0003_status"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='status',
-            name='awp',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='status_awp', to='hydrostat.Noun'),
+            model_name="status",
+            name="awp",
+            field=models.ForeignKey(
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="status_awp",
+                to="hydrostat.Noun",
+            ),
         ),
         migrations.AddField(
-            model_name='status',
-            name='awt',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='status_awt', to='hydrostat.Noun'),
+            model_name="status",
+            name="awt",
+            field=models.ForeignKey(
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="status_awt",
+                to="hydrostat.Noun",
+            ),
         ),
         migrations.AddField(
-            model_name='status',
-            name='inw',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='status_inw', to='hydrostat.Noun'),
+            model_name="status",
+            name="inw",
+            field=models.ForeignKey(
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="status_inw",
+                to="hydrostat.Noun",
+            ),
         ),
     ]

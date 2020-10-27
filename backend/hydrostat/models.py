@@ -15,9 +15,9 @@ class Noun(models.Model):
     dateout = models.DateField()
     awp = models.ForeignKey(
         "home.CustomText",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="noun_awp",
     )
 
