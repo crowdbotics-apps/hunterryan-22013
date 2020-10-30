@@ -68,6 +68,26 @@ class Columns(models.Model):
         null=True,
         blank=True,
     )
+    enditemDocnumber = models.CharField(
+        max_length=14,
+        null=True,
+        blank=True,
+    )
+    dueoutpieces = models.CharField(
+        max_length=256,
+        null=True,
+        blank=True,
+    )
+    dueOutDocnumbers = models.CharField(
+        max_length=14,
+        null=True,
+        blank=True,
+    )
+    difm = models.CharField(
+        max_length=256,
+        null=True,
+        blank=True,
+    )
 
 
 # Create your models here.
