@@ -89,7 +89,17 @@ class Columns(models.Model):
         max_length=256,
     )
     code = models.CharField(
+        null=True,
+        blank=True,
         max_length=1,
+    )
+    incomingserialnumber = models.CharField(
+        max_length=10,
+        null=True,
+        blank=True,
+    )
+    jobcontrolnumber = models.CharField(
+        max_length=9,
         null=True,
         blank=True,
     )
