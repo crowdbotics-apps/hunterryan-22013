@@ -6,33 +6,33 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('productionSlide', '0002_auto_20201030_1639'),
+        ("productionSlide", "0002_auto_20201030_1639"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='production',
-            name='dateIn',
+            model_name="production",
+            name="dateIn",
             field=models.DateField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='production',
-            name='discrepancy',
+            model_name="production",
+            name="discrepancy",
             field=models.CharField(blank=True, max_length=15, null=True),
         ),
         migrations.AddField(
-            model_name='production',
-            name='documentnumber',
+            model_name="production",
+            name="documentnumber",
             field=models.CharField(blank=True, max_length=14, null=True),
         ),
         migrations.AddField(
-            model_name='production',
-            name='dueOutParts',
+            model_name="production",
+            name="dueOutParts",
             field=models.CharField(blank=True, max_length=50, null=True),
         ),
         migrations.AddField(
-            model_name='production',
-            name='initiateDate',
+            model_name="production",
+            name="initiateDate",
             field=models.DateField(blank=True, null=True),
         ),
     ]

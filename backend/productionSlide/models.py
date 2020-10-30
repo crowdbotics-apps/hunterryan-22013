@@ -28,9 +28,9 @@ class Production(models.Model):
         max_length=100,
     )
     discrepancy = models.CharField(
-        max_length=15,
         null=True,
         blank=True,
+        max_length=15,
     )
     dateIn = models.DateField(
         null=True,
@@ -41,14 +41,14 @@ class Production(models.Model):
         blank=True,
     )
     documentnumber = models.CharField(
-        max_length=14,
         null=True,
         blank=True,
+        max_length=14,
     )
     dueOutParts = models.CharField(
-        max_length=50,
         null=True,
         blank=True,
+        max_length=50,
     )
 
 

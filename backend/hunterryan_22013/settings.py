@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     "receivingCdocs",
     "productionSlide",
     "yearlyStats",
+    "parts",
 ]
 LOCAL_APPS = [
     "home",
