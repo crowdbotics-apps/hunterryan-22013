@@ -6,18 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('hydrostat', '0008_auto_20201030_1629'),
+        ("hydrostat", "0008_auto_20201030_1629"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='columns',
-            name='tailnumber',
+            model_name="columns",
+            name="tailnumber",
             field=models.CharField(blank=True, max_length=10, null=True),
         ),
         migrations.AddField(
-            model_name='columns',
-            name='three50tag',
+            model_name="columns",
+            name="three50tag",
             field=models.CharField(blank=True, max_length=6, null=True),
         ),
     ]

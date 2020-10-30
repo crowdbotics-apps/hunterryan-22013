@@ -104,12 +104,22 @@ class Columns(models.Model):
         max_length=9,
     )
     tailnumber = models.CharField(
+        null=True,
+        blank=True,
         max_length=10,
+    )
+    three50tag = models.CharField(
+        null=True,
+        blank=True,
+        max_length=6,
+    )
+    outgoingserialnumber = models.CharField(
+        max_length=20,
         null=True,
         blank=True,
     )
-    three50tag = models.CharField(
-        max_length=6,
+    sevenLevel = models.CharField(
+        max_length=10,
         null=True,
         blank=True,
     )
