@@ -34,6 +34,7 @@ urlpatterns = [
     path("api/v1/", include("hydrostat.api.v1.urls")),
     path("hydrostat/", include("hydrostat.urls")),
     path("api/v1/", include("receivingJdocs.api.v1.urls")),
+    path("api/v1/", include("receivingCdocs.api.v1.urls")),
 ]
 
 admin.site.site_header = "HunterRyan"
