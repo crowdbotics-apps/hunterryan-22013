@@ -43,7 +43,16 @@ class Columns(models.Model):
         max_length=3,
     )
     notes = models.CharField(
+        null=True,
+        blank=True,
         max_length=256,
+    )
+    discrepacies = models.CharField(
+        max_length=10,
+        null=True,
+        blank=True,
+    )
+    micap = models.BooleanField(
         null=True,
         blank=True,
     )

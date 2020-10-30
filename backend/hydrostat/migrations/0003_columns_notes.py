@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('hydrostat', '0002_columns'),
+        ("hydrostat", "0002_columns"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='columns',
-            name='notes',
+            model_name="columns",
+            name="notes",
             field=models.CharField(blank=True, max_length=256, null=True),
         ),
     ]
