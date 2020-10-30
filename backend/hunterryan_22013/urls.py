@@ -36,6 +36,7 @@ urlpatterns = [
     path("api/v1/", include("receivingJdocs.api.v1.urls")),
     path("api/v1/", include("receivingCdocs.api.v1.urls")),
     path("api/v1/", include("productionSlide.api.v1.urls")),
+    path("api/v1/", include("yearlyStats.api.v1.urls")),
 ]
 
 admin.site.site_header = "HunterRyan"

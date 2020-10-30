@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     "receivingJdocs",
     "receivingCdocs",
     "productionSlide",
+    "yearlyStats",
 ]
 LOCAL_APPS = [
     "home",
