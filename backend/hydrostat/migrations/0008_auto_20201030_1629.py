@@ -6,18 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('hydrostat', '0007_columns_code'),
+        ("hydrostat", "0007_columns_code"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='columns',
-            name='incomingserialnumber',
+            model_name="columns",
+            name="incomingserialnumber",
             field=models.CharField(blank=True, max_length=10, null=True),
         ),
         migrations.AddField(
-            model_name='columns',
-            name='jobcontrolnumber',
+            model_name="columns",
+            name="jobcontrolnumber",
             field=models.CharField(blank=True, max_length=9, null=True),
         ),
     ]

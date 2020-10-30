@@ -94,12 +94,22 @@ class Columns(models.Model):
         max_length=1,
     )
     incomingserialnumber = models.CharField(
+        null=True,
+        blank=True,
+        max_length=10,
+    )
+    jobcontrolnumber = models.CharField(
+        null=True,
+        blank=True,
+        max_length=9,
+    )
+    tailnumber = models.CharField(
         max_length=10,
         null=True,
         blank=True,
     )
-    jobcontrolnumber = models.CharField(
-        max_length=9,
+    three50tag = models.CharField(
+        max_length=6,
         null=True,
         blank=True,
     )
