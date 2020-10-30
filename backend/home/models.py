@@ -20,6 +20,13 @@ class CustomText(models.Model):
         blank=True,
         max_length=20,
     )
+    a10NLGuplockact = models.ForeignKey(
+        "hydrostat.Columns",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="customtext_a10NLGuplockact",
+    )
 
     def __str__(self):
         return self.title
