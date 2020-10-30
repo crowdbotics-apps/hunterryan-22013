@@ -10,6 +10,16 @@ class CustomText(models.Model):
     title = models.CharField(
         max_length=150,
     )
+    code = models.CharField(
+        max_length=1,
+        null=True,
+        blank=True,
+    )
+    incomingserialnumber = models.CharField(
+        max_length=20,
+        null=True,
+        blank=True,
+    )
 
     def __str__(self):
         return self.title

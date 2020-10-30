@@ -6,28 +6,28 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('hydrostat', '0005_auto_20201030_0124'),
+        ("hydrostat", "0005_auto_20201030_0124"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='columns',
-            name='difm',
+            model_name="columns",
+            name="difm",
             field=models.CharField(blank=True, max_length=256, null=True),
         ),
         migrations.AddField(
-            model_name='columns',
-            name='dueOutDocnumbers',
+            model_name="columns",
+            name="dueOutDocnumbers",
             field=models.CharField(blank=True, max_length=14, null=True),
         ),
         migrations.AddField(
-            model_name='columns',
-            name='dueoutpieces',
+            model_name="columns",
+            name="dueoutpieces",
             field=models.CharField(blank=True, max_length=256, null=True),
         ),
         migrations.AddField(
-            model_name='columns',
-            name='enditemDocnumber',
+            model_name="columns",
+            name="enditemDocnumber",
             field=models.CharField(blank=True, max_length=14, null=True),
         ),
     ]

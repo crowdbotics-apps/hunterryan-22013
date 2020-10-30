@@ -69,24 +69,24 @@ class Columns(models.Model):
         blank=True,
     )
     enditemDocnumber = models.CharField(
-        max_length=14,
         null=True,
         blank=True,
+        max_length=14,
     )
     dueoutpieces = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
     dueOutDocnumbers = models.CharField(
-        max_length=14,
         null=True,
         blank=True,
+        max_length=14,
     )
     difm = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
 
 
