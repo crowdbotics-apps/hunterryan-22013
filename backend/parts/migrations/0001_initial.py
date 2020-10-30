@@ -9,15 +9,30 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('hydrostat', '0010_auto_20201030_1635'),
+        ("hydrostat", "0010_auto_20201030_1635"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='AllOurParts',
+            name="AllOurParts",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('a10brake', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='allourparts_a10brake', to='hydrostat.Columns')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "a10brake",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="allourparts_a10brake",
+                        to="hydrostat.Columns",
+                    ),
+                ),
             ],
         ),
     ]
