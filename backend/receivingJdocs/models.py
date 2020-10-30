@@ -6,16 +6,16 @@ class Jdocs(models.Model):
     "Generated Model"
     bins = models.ForeignKey(
         "hydrostat.Columns",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="jdocs_bins",
     )
     documentnumber = models.ForeignKey(
         "hydrostat.Columns",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="jdocs_documentnumber",
     )
 

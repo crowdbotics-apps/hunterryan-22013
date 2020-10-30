@@ -88,6 +88,11 @@ class Columns(models.Model):
         blank=True,
         max_length=256,
     )
+    code = models.CharField(
+        max_length=1,
+        null=True,
+        blank=True,
+    )
 
 
 # Create your models here.
