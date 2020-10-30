@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django.contrib.sites",
     "hydrostat",
+    "receivingJdocs",
 ]
 LOCAL_APPS = [
     "home",
