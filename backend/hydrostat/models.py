@@ -48,11 +48,23 @@ class Columns(models.Model):
         max_length=256,
     )
     discrepacies = models.CharField(
+        null=True,
+        blank=True,
         max_length=10,
+    )
+    micap = models.BooleanField(
         null=True,
         blank=True,
     )
-    micap = models.BooleanField(
+    dateIn = models.DateField(
+        null=True,
+        blank=True,
+    )
+    dateOut = models.DateField(
+        null=True,
+        blank=True,
+    )
+    initiateDate = models.DateField(
         null=True,
         blank=True,
     )

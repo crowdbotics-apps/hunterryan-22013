@@ -6,18 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('hydrostat', '0003_columns_notes'),
+        ("hydrostat", "0003_columns_notes"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='columns',
-            name='discrepacies',
+            model_name="columns",
+            name="discrepacies",
             field=models.CharField(blank=True, max_length=10, null=True),
         ),
         migrations.AddField(
-            model_name='columns',
-            name='micap',
+            model_name="columns",
+            name="micap",
             field=models.BooleanField(blank=True, null=True),
         ),
     ]
