@@ -6,18 +6,26 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('hydrostat', '0001_initial'),
+        ("hydrostat", "0001_initial"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Columns',
+            name="Columns",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('bin', models.CharField(max_length=3)),
-                ('noun', models.CharField(blank=True, max_length=100, null=True)),
-                ('orgshop', models.CharField(blank=True, max_length=10, null=True)),
-                ('status', models.CharField(blank=True, max_length=3, null=True)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("bin", models.CharField(max_length=3)),
+                ("noun", models.CharField(blank=True, max_length=100, null=True)),
+                ("orgshop", models.CharField(blank=True, max_length=10, null=True)),
+                ("status", models.CharField(blank=True, max_length=3, null=True)),
             ],
         ),
     ]

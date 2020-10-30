@@ -28,17 +28,22 @@ class Columns(models.Model):
         max_length=3,
     )
     noun = models.CharField(
-        max_length=100,
         null=True,
         blank=True,
+        max_length=100,
     )
     orgshop = models.CharField(
-        max_length=10,
         null=True,
         blank=True,
+        max_length=10,
     )
     status = models.CharField(
+        null=True,
+        blank=True,
         max_length=3,
+    )
+    notes = models.CharField(
+        max_length=256,
         null=True,
         blank=True,
     )
