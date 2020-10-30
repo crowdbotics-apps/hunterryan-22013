@@ -13,9 +13,9 @@ class Cdocs(models.Model):
     )
     documentnumber = models.ForeignKey(
         "hydrostat.Columns",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="cdocs_documentnumber",
     )
 

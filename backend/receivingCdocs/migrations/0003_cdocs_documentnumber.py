@@ -7,14 +7,20 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('hydrostat', '0006_auto_20201030_0129'),
-        ('receivingCdocs', '0002_auto_20201030_1619'),
+        ("hydrostat", "0006_auto_20201030_0129"),
+        ("receivingCdocs", "0002_auto_20201030_1619"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='cdocs',
-            name='documentnumber',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='cdocs_documentnumber', to='hydrostat.Columns'),
+            model_name="cdocs",
+            name="documentnumber",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="cdocs_documentnumber",
+                to="hydrostat.Columns",
+            ),
         ),
     ]

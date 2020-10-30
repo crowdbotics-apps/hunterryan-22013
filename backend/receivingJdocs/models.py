@@ -4,8 +4,19 @@ from django.db import models
 
 class Jdocs(models.Model):
     "Generated Model"
-    bin = models.CharField(
-        max_length=5,
+    bins = models.ForeignKey(
+        "hydrostat.Columns",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="jdocs_bins",
+    )
+    documentnumber = models.ForeignKey(
+        "hydrostat.Columns",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="jdocs_documentnumber",
     )
 
 
