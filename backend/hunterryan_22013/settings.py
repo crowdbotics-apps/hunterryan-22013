@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     "hydrostat",
     "receivingJdocs",
     "receivingCdocs",
+    "productionSlide",
 ]
 LOCAL_APPS = [
     "home",
