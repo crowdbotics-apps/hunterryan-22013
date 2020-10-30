@@ -8,22 +8,45 @@ class Production(models.Model):
         max_length=5,
     )
     noun = models.CharField(
-        max_length=20,
         null=True,
         blank=True,
+        max_length=20,
     )
     orgshop = models.CharField(
-        max_length=10,
         null=True,
         blank=True,
+        max_length=10,
     )
     status = models.CharField(
+        null=True,
+        blank=True,
         max_length=3,
+    )
+    notes = models.CharField(
+        null=True,
+        blank=True,
+        max_length=100,
+    )
+    discrepancy = models.CharField(
+        max_length=15,
         null=True,
         blank=True,
     )
-    notes = models.CharField(
-        max_length=100,
+    dateIn = models.DateField(
+        null=True,
+        blank=True,
+    )
+    initiateDate = models.DateField(
+        null=True,
+        blank=True,
+    )
+    documentnumber = models.CharField(
+        max_length=14,
+        null=True,
+        blank=True,
+    )
+    dueOutParts = models.CharField(
+        max_length=50,
         null=True,
         blank=True,
     )
