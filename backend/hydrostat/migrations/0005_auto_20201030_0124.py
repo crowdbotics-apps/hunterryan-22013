@@ -6,23 +6,23 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('hydrostat', '0004_auto_20201030_0122'),
+        ("hydrostat", "0004_auto_20201030_0122"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='columns',
-            name='dateIn',
+            model_name="columns",
+            name="dateIn",
             field=models.DateField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='columns',
-            name='dateOut',
+            model_name="columns",
+            name="dateOut",
             field=models.DateField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='columns',
-            name='initiateDate',
+            model_name="columns",
+            name="initiateDate",
             field=models.DateField(blank=True, null=True),
         ),
     ]
