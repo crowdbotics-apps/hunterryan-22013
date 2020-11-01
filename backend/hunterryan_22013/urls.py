@@ -38,6 +38,11 @@ urlpatterns = [
     path("api/v1/", include("productionSlide.api.v1.urls")),
     path("api/v1/", include("yearlyStats.api.v1.urls")),
     path("api/v1/", include("parts.api.v1.urls")),
+    path("parts/", include("parts.urls")),
+    path("productionSlide/", include("productionSlide.urls")),
+    path("receivingCdocs/", include("receivingCdocs.urls")),
+    path("receivingJdocs/", include("receivingJdocs.urls")),
+    path("yearlyStats/", include("yearlyStats.urls")),
 ]
 
 admin.site.site_header = "HunterRyan"

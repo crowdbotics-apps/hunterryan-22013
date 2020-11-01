@@ -7,24 +7,11 @@ from django.db import models
 
 
 class CustomText(models.Model):
-    title = models.CharField(
-        max_length=150,
-    )
-    code = models.CharField(
-        null=True,
-        blank=True,
-        max_length=1,
-    )
-    incomingserialnumber = models.CharField(
-        null=True,
-        blank=True,
-        max_length=20,
-    )
     a10NLGuplockact = models.ForeignKey(
         "hydrostat.Columns",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="customtext_a10NLGuplockact",
     )
 
