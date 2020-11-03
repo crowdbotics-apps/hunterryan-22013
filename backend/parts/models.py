@@ -9,6 +9,11 @@ class AllOurParts(models.Model):
         on_delete=models.CASCADE,
         related_name="allourparts_a10brake",
     )
+    a10NLGuplockAct = models.CharField(
+        max_length=256,
+        null=True,
+        blank=True,
+    )
 
 
 # Create your models here.
