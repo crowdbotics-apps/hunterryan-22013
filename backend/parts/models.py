@@ -127,6 +127,10 @@ class AllOurParts(models.Model):
         null=True,
         blank=True,
     )
+    f15nlgact = models.URLField(
+        null=True,
+        blank=True,
+    )
 
 
 # Create your models here.
