@@ -6,33 +6,33 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('parts', '0005_auto_20201104_1727'),
+        ("parts", "0005_auto_20201104_1727"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='allourparts',
-            name='a10swivel0611045001',
+            model_name="allourparts",
+            name="a10swivel0611045001",
             field=models.URLField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='allourparts',
-            name='a10swivel061149001002',
+            model_name="allourparts",
+            name="a10swivel061149001002",
             field=models.URLField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='allourparts',
-            name='a10swivel1428951',
+            model_name="allourparts",
+            name="a10swivel1428951",
             field=models.URLField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='allourparts',
-            name='a10swivel71215',
+            model_name="allourparts",
+            name="a10swivel71215",
             field=models.URLField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='allourparts',
-            name='a10swivel72139',
+            model_name="allourparts",
+            name="a10swivel72139",
             field=models.URLField(blank=True, null=True),
         ),
     ]

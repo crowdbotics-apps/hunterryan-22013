@@ -71,6 +71,34 @@ class AllOurParts(models.Model):
         null=True,
         blank=True,
     )
+    f15rhmlg = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f15lhmlg = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f15nlg = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f15jfsaccum = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f15speedbrakeswivel = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f15speedbrakeact = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f15canopyact = models.URLField(
+        null=True,
+        blank=True,
+    )
 
 
 # Create your models here.
