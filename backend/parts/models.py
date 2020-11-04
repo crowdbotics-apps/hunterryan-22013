@@ -10,9 +10,9 @@ class AllOurParts(models.Model):
         related_name="allourparts_a10brake",
     )
     a10NLGuplockAct = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
 
 
