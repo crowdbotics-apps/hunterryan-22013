@@ -35,6 +35,22 @@ class AllOurParts(models.Model):
         null=True,
         blank=True,
     )
+    a10flapact = models.URLField(
+        null=True,
+        blank=True,
+    )
+    a10actuatorm1m2 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    a10emeraccum = models.URLField(
+        null=True,
+        blank=True,
+    )
+    a10swivel521233 = models.URLField(
+        null=True,
+        blank=True,
+    )
 
 
 # Create your models here.
