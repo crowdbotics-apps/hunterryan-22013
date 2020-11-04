@@ -6,43 +6,43 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('parts', '0006_auto_20201104_1745'),
+        ("parts", "0006_auto_20201104_1745"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='allourparts',
-            name='f15canopyact',
+            model_name="allourparts",
+            name="f15canopyact",
             field=models.URLField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='allourparts',
-            name='f15jfsaccum',
+            model_name="allourparts",
+            name="f15jfsaccum",
             field=models.URLField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='allourparts',
-            name='f15lhmlg',
+            model_name="allourparts",
+            name="f15lhmlg",
             field=models.URLField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='allourparts',
-            name='f15nlg',
+            model_name="allourparts",
+            name="f15nlg",
             field=models.URLField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='allourparts',
-            name='f15rhmlg',
+            model_name="allourparts",
+            name="f15rhmlg",
             field=models.URLField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='allourparts',
-            name='f15speedbrakeact',
+            model_name="allourparts",
+            name="f15speedbrakeact",
             field=models.URLField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='allourparts',
-            name='f15speedbrakeswivel',
+            model_name="allourparts",
+            name="f15speedbrakeswivel",
             field=models.URLField(blank=True, null=True),
         ),
     ]
