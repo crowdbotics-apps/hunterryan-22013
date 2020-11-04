@@ -111,6 +111,22 @@ class AllOurParts(models.Model):
         null=True,
         blank=True,
     )
+    f15pumpmanifold = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f15utilres = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f15brake = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f15tailhookdamper = models.URLField(
+        null=True,
+        blank=True,
+    )
 
 
 # Create your models here.

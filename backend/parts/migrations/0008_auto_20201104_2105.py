@@ -6,23 +6,23 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('parts', '0007_auto_20201104_1816'),
+        ("parts", "0007_auto_20201104_1816"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='allourparts',
-            name='f15mlgact',
+            model_name="allourparts",
+            name="f15mlgact",
             field=models.URLField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='allourparts',
-            name='f15pcreservoir',
+            model_name="allourparts",
+            name="f15pcreservoir",
             field=models.URLField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='allourparts',
-            name='f15tailhookact',
+            model_name="allourparts",
+            name="f15tailhookact",
             field=models.URLField(blank=True, null=True),
         ),
     ]
