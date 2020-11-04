@@ -14,11 +14,6 @@ class CustomText(models.Model):
         on_delete=models.CASCADE,
         related_name="customtext_a10NLGuplockact",
     )
-    a10slatAct = models.URLField(
-        max_length=256,
-        null=True,
-        blank=True,
-    )
 
     def __str__(self):
         return self.title
