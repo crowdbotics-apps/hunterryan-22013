@@ -99,6 +99,18 @@ class AllOurParts(models.Model):
         null=True,
         blank=True,
     )
+    f15mlgact = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f15tailhookact = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f15pcreservoir = models.URLField(
+        null=True,
+        blank=True,
+    )
 
 
 # Create your models here.
