@@ -155,6 +155,14 @@ class AllOurParts(models.Model):
         null=True,
         blank=True,
     )
+    f16jfsdooract = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16mainretactblk25 = models.BigIntegerField(
+        null=True,
+        blank=True,
+    )
 
 
 # Create your models here.
