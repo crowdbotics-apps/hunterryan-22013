@@ -8,34 +8,34 @@ class Stats(models.Model):
         max_length=20,
     )
     difm = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
     nsn = models.CharField(
-        max_length=13,
         null=True,
         blank=True,
+        max_length=13,
     )
     partNumber = models.CharField(
-        max_length=100,
         null=True,
         blank=True,
+        max_length=100,
     )
     errcCode = models.CharField(
-        max_length=3,
         null=True,
         blank=True,
+        max_length=3,
     )
     price = models.CharField(
-        max_length=20,
         null=True,
         blank=True,
+        max_length=20,
     )
     to = models.CharField(
-        max_length=30,
         null=True,
         blank=True,
+        max_length=30,
     )
 
 

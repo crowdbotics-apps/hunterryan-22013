@@ -131,6 +131,26 @@ class AllOurParts(models.Model):
         null=True,
         blank=True,
     )
+    f16FCA = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16JFS = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16RESACCUM = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16ARDOORACT = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16DWNLOCK105 = models.BigIntegerField(
+        null=True,
+        blank=True,
+    )
 
 
 # Create your models here.
