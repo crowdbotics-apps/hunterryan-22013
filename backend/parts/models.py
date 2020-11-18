@@ -167,6 +167,10 @@ class AllOurParts(models.Model):
         null=True,
         blank=True,
     )
+    f16mainretactblk42 = models.URLField(
+        null=True,
+        blank=True,
+    )
 
 
 # Create your models here.
