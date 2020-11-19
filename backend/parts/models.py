@@ -171,6 +171,114 @@ class AllOurParts(models.Model):
         null=True,
         blank=True,
     )
+    f16noseretact002 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16noseret003 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16noseret004 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16steeract = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f1630brake = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f1650brake = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16bcv = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16commservo = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16filterret12rv = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16filterpress31rv = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16jfshandpump = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16pdublk25 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16pdublk42 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16resdash6 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16resdash7 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16resdash8 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16swivel801 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16swivel810 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16swivel811 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16mlgblock25 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16mlgblock42 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16nlgblock25 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16nlgblock42 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16cartvlvdash3 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16cartvlvdash2 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16cartvlvdash6 = models.URLField(
+        null=True,
+        blank=True,
+    )
+    f16staypac = models.URLField(
+        null=True,
+        blank=True,
+    )
 
 
 # Create your models here.
