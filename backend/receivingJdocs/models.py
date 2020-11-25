@@ -18,6 +18,9 @@ class Jdocs(models.Model):
         on_delete=models.CASCADE,
         related_name="jdocs_documentnumber",
     )
-
+    file = models.FileField(blank=True, null=True)
+    
+    def __str__(self):
+        return self.file.name
 
 # Create your models here.
