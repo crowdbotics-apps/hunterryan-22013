@@ -42,8 +42,8 @@ urlpatterns = [
     path("api/v1/", include("parts.api.v1.urls")),
     path("parts/", include("parts.urls")),
     path("productionSlide/", include("productionSlide.urls")),
-    path("receivingCdocs/", include("receivingCdocs.urls")),
-    path("receivingJdocs/", include("receivingJdocs.urls")),
+    path("receivingCdocs/", include("receivingCdocs.api.v1.urls")),
+    path("receivingJdocs/", include("receivingJdocs.api.v1.urls")),
     path("yearlyStats/", include("yearlyStats.urls")),
 ]
 
