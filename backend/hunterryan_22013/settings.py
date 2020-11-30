@@ -116,8 +116,8 @@ DATABASES = {
     }
 }
 
-# if env.str("DATABASE_URL", default=None):
-#     DATABASES = {"default": env.db()}
+if env.str("DATABASE_URL", default=None):
+    DATABASES = {"default": env.db()}
 
 
 # Password validation
@@ -154,8 +154,8 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/uploads')
+MEDIA_URL = '/uploads/'
 
 MIDDLEWARE += ["whitenoise.middleware.WhiteNoiseMiddleware"]
 
