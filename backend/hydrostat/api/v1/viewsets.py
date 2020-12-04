@@ -41,7 +41,7 @@ class UploadFileView(ViewSet):
             if idx == 0 or row[0].value == None:
                 continue
             try:
-                column = Columns(
+                column = Columns.objects.create(
                     bin=row[0].value,
                     noun=row[1].value, 
                     orgshop=row[2].value, 
@@ -62,8 +62,7 @@ class UploadFileView(ViewSet):
                     three50tag=row[17].value, 
                     outgoingserialnumber=row[18].value, 
                     sevenLevel=row[19].value, 
-                )                
-                column.save()
+                )
             except:
                 pass
         return Response(status=200)
