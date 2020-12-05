@@ -79,7 +79,7 @@
             }
         });
 
-        function api_call(url, data, method='PATCH'){
+        function api_call(url, data, method='PATCH'){            
             $.ajax({
                 type: method,
                 url: url,
@@ -103,6 +103,29 @@
           "timeOut": 2000,
           "extendedTimeOut": 1000
         }
+
+        $('#upload').on('click', function (e) {            
+            var fd = new FormData(); 
+            var files = $('#file')[0].files[0]; 
+            if (files){
+                fd.append('file', files); 
+                $.ajax({ 
+                    url: 'http://hunterryan-22013.botics.co/api/v1/uploads/', 
+                    type: 'POST', 
+                    data: fd, 
+                    contentType: false, 
+                    processData: false, 
+                    headers: {
+                        'X-CSRFToken': $.cookie('csrftoken')
+                    },
+                    success: function(response){                     
+                       alert('File uploaded successfully!'); 
+                    }, 
+                }); 
+            }
+            else
+                alert('Choose file, please!')
+        });
     </script>
   </body>
 </html>
