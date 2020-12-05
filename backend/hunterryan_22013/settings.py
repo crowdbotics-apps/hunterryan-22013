@@ -116,8 +116,8 @@ DATABASES = {
     }
 }
 
-# if env.str("DATABASE_URL", default=None):
-#     DATABASES = {"default": env.db()}
+if env.str("DATABASE_URL", default=None):
+    DATABASES = {"default": env.db()}
 
 
 # Password validation
